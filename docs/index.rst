@@ -15,13 +15,13 @@ Docker Installation
 Docker Installation Steps
 (https://docs.docker.com/engine/install/ubuntu/)
 
-After installing the docker restart your Machine.
-* check Docker install
-* run groups::
+| After installing the docker restart your Machine.
+| check Docker install
+  run groups
 user_name adm cdrom sudo dip plugdev lpadmin lxd sambashare docker::
-#dockerinstalled::
-* Check docker version::
-run docker --version::
+| #dockerinstalled
+| Check docker version::
+| run docker --version::
 ``sudo apt install klayout #for klayout``
 
 Setting Up Magic 
@@ -40,22 +40,22 @@ Setting Up Magic
 Clone the respository to install magic
 
 git clone https://github.com/RTimothyEdwards/magic.git
-``cd magic``
-``./configure``
-``sudo make``
-``sudo make install``
-magic --version
+| ``cd magic``
+| ``./configure``
+| ``sudo make``
+| ``sudo make install``
+| ``magic --version``
 ``cd ../``
-```
+
 Setting Up OpenLane
 -------------------
-Clone the respository and run the below to set up the Sky130 PDK and OpenLane
-git clone https://github.com/The-OpenROAD-Project/OpenLane.git
-``cd OpenLane/``
-``make openlane``# This will pull  Openlane docker image.
-``make pdk`` # Default PDK_ROOT is $(pwd)/pdks. If you want to install the PDK at a differnt location, uncomment the next line.
-#export PDK_ROOT=<absolute path to where skywater-pdk and open_pdks will reside>
-``make test`` # This is to test that the flow and the pdk were properly inst
+| Clone the respository and run the below to set up the Sky130 PDK and OpenLane
+| git clone https://github.com/The-OpenROAD-Project/OpenLane.git
+| ``cd OpenLane/``
+| ``make openlane``# This will pull  Openlane docker image.
+| ``make pdk`` # Default PDK_ROOT is $(pwd)/pdks. If you want to install the PDK at a differnt location, uncomment the next line.
+| #export PDK_ROOT=<absolute path to where skywater-pdk and open_pdks will reside>
+| ``make test`` # This is to test that the flow and the pdk were properly inst
 #This test run the design spm. Check the final generated layout at this path ../designs/spm/runs/openlane_test/results/magic/spm.gds.
 ```
 #
