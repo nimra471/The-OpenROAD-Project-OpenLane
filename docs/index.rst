@@ -1,38 +1,31 @@
-# The OpenROAD-Project OpenLane
+The OpenROAD-Project OpenLane
+ =============================
+ The OpenRoad Openlane is a automated RTL to GDSII flow build around open source tool. The flow perform the auto place and route of an ASIC design -in 24 hours with no human in the loop.
 
+Prerequisites
+-------------
+install Python 3.6+ and create virtual environment::
 
-The OpenRoad Openlane is a automated RTL to GDSII flow build around open source tool. The flow perform the auto place and route of an ASIC design -in 24 hours with no human in the loop.
+On Ubuntu
+---------
+sudo apt install -y build-essential python3 python3-venv python3-pip::
 
-- [Prerequisites](#prerequisites)
-- [Docker Installtion Steps](#docker_Installation)
-- [Setting Up Magic](#setting-up-Magic)
-- [Setting Up OpenLane](#setting-up-OpenLane)
-
-
-# Prerequisites
-
-- install Python 3.6+ and create virtual environment.
-
-# On Ubuntu
-```bash
-sudo apt install -y build-essential python3 python3-venv python3-pip
-```
-# Docker Installation
-- [Docker Installation Steps](https://docs.docker.com/engine/install/ubuntu/)
+Docker Installation
+-------------------
+Docker Installation Steps
+(https://docs.docker.com/engine/install/ubuntu/)
 
 After installing the docker restart your Machine.
-```bash
-  check Docker install
-- run groups
-  user_name adm cdrom sudo dip plugdev lpadmin lxd sambashare docker
-  #dockerinstalled
-  Check docker version
-- run docker --version
-  sudo apt install klayout #for klayout
+* check Docker install
+* run groups::
+user_name adm cdrom sudo dip plugdev lpadmin lxd sambashare docker::
+#dockerinstalled::
+* Check docker version::
+run docker --version::
+sudo apt install klayout #for klayout::
 
-```
-# Setting Up Magic 
-```bash
+Setting Up Magic 
+----------------
 #Prerequisites of magic
 sudo apt install m4
 sudo apt install csh
