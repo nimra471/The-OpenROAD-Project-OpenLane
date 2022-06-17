@@ -34,15 +34,15 @@ After installing the docker restart your Machine.
 # Setting Up Magic 
 ```bash
 #Prerequisites of magic
-sudo apt-get install m4
-sudo apt-get install csh
-sudo apt-get install libx11-dev
-sudo apt-get install libncurses-dev
-sudo apt-get install tcl-dev tk-dev
-sudo apt-get install blt-dev
-sudo apt-get install freeglut3
-sudo apt-get install libgl1-mesa-dev
-sudo apt-get install libglu1-mesa-devash
+sudo apt install m4
+sudo apt install csh
+sudo apt install libx11-dev
+sudo apt install libncurses-dev
+sudo apt install tcl-dev tk-dev
+sudo apt install blt-dev
+sudo apt install freeglut3
+sudo apt install libgl1-mesa-dev
+sudo apt install libglu1-mesa-devash
 ```
 Clone the respository to install magic
 ```bash
@@ -59,13 +59,13 @@ Clone the respository and run the below to set up the Sky130 PDK and OpenLane
 ```bash
 git clone https://github.com/The-OpenROAD-Project/OpenLane.git
 cd OpenLane/
-git checkout v0.23
-make pull-openlane # This will pull updated Openlane docker image.
+make openlane # This will pull  Openlane docker image.
 make pdk # Default PDK_ROOT is $(pwd)/pdks. If you want to install the PDK at a differnt location, uncomment the next line.
 #export PDK_ROOT=<absolute path to where skywater-pdk and open_pdks will reside>
 make test # This is to test that the flow and the pdk were properly inst
 #This test run the design spm. Check the final generated layout at this path ../designs/spm/runs/openlane_test/results/magic/spm.gds.
 ```
+#
 
 
 
