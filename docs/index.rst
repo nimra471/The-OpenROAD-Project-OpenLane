@@ -26,18 +26,18 @@ user_name adm cdrom sudo dip plugdev lpadmin lxd sambashare docker::
 
 Setting Up Magic 
 ----------------
-#Prerequisites of magic
-``sudo apt install m4``
-``sudo apt install csh``
-``sudo apt install libx11-dev``
-``sudo apt install libncurses-dev``
-``sudo apt install tcl-dev tk-dev``
-``sudo apt install blt-dev``
-``sudo apt install freeglut3``
-``sudo apt install libgl1-mesa-dev``
-``sudo apt install libglu1-mesa-devash``
+| #Prerequisites of magic
+| ``sudo apt install m4``
+| ``sudo apt install csh``
+| ``sudo apt install libx11-dev``
+| ``sudo apt install libncurses-dev``
+| ``sudo apt install tcl-dev tk-dev``
+| ``sudo apt install blt-dev``
+| ``sudo apt install freeglut3``
+| ``sudo apt install libgl1-mesa-dev``
+| ``sudo apt install libglu1-mesa-devash``
 
-Clone the respository to install magic
+| Clone the respository to install magic
 
 git clone https://github.com/RTimothyEdwards/magic.git
 | ``cd magic``
