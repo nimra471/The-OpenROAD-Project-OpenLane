@@ -1,6 +1,6 @@
 The OpenROAD-Project OpenLane
 =============================
- The OpenRoad Openlane is a automated RTL to GDSII flow build around open source tool. The flow perform the auto place and route of an ASIC design -in 24 hours with no human in the loop.
+The OpenRoad Openlane is a automated RTL to GDSII flow build around open source tool. The flow perform the auto place and route of an ASIC design -in 24 hours with no human in the loop.
 
 Prerequisites
 -------------
