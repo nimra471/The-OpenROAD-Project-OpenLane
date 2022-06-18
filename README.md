@@ -29,28 +29,6 @@ Check docker version
 run docker --version
 sudo apt install klayout #for klayout
 ```
-# Setting Up Magic 
-```bash 
-#Prerequisites of magic 
-sudo apt install m4
-sudo apt install csh 
-sudo apt install libx11-dev 
-sudo apt install libncurses-dev 
-sudo apt install tcl-dev tk-dev s
-udo apt install blt-dev
-sudo apt install freeglut3
-sudo apt install libgl1-mesa-dev
-sudo apt install libglu1-mesa-devash 
-```
-Clone the respository to install magic 
-```bash 
-git clone https://github.com/RTimothyEdwards/magic.git 
-cd magic
-./configure 
-sudo make 
-sudo make install 
-magic --version cd ../ 
-``` 
 # Setting Up OpenLane
 Clone the respository and run the below to set up the Sky130 PDK and OpenLane 
 ```bash git clone https://github.com/The-OpenROAD-Project/OpenLane.git 
